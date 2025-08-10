@@ -8,11 +8,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// health
+// health stays
 app.get("/health", (_req, res) => res.json({ ok: true }));
 
-// mount Cube REST route
-app.use("/cube", require("./routes/cube"));
+// new chat route
+app.use("/chat", require("./routes/chat"));
 
 // static homepage (optional)
 app.use(express.static(path.join(__dirname, "public")));

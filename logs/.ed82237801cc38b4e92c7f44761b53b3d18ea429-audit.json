@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/bheng/Sites/cube-ai-be/logs/.ed82237801cc38b4e92c7f44761b53b3d18ea429-audit.json",
+    "files": [
+        {
+            "date": 1754835727220,
+            "name": "/Users/bheng/Sites/cube-ai-be/logs/cube-api-2025-08-10.log",
+            "hash": "096aedd5c731a46d3c22d37477407b0271c260e801679fd267b5e0102ec6a611"
+        }
+    ],
+    "hashType": "sha256"
+}
