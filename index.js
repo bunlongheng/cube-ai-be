@@ -8,57 +8,41 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// request/response logger middleware
+// Request/Response logging middleware
 app.use((req, res, next) => {
     const start = Date.now();
 
-    // redact sensitive fields in logs
-    const redact = obj => {
-        if (!obj || typeof obj !== "object") return obj;
-        const clone = { ...obj };
-        for (const key of Object.keys(clone)) {
-            if (/(password|token|secret|apikey)/i.test(key)) {
-                clone[key] = "[REDACTED]";
-            }
-        }
-        return clone;
+    const redact = o => {
+        if (!o || typeof o !== "object") return o;
+        const c = { ...o };
+        for (const k of Object.keys(c)) if (/(password|token|secret|apikey)/i.test(k)) c[k] = "[REDACTED]";
+        return c;
     };
 
-    const requestData = {
-        method: req.method,
-        url: req.originalUrl,
-        body: redact(req.body),
-        query: redact(req.query),
-        params: redact(req.params),
-    };
-
-    logger.info(`Incoming request: ${req.method} ${req.originalUrl}`, requestData);
-
-    // capture and log response body
     const originalSend = res.send;
     res.send = function (body) {
-        logger.debug(`Response for ${req.method} ${req.originalUrl}`, {
-            statusCode: res.statusCode,
-            body,
-        });
+        logger.debug(`Response for ${req.method} ${req.originalUrl}`, { statusCode: res.statusCode, body });
         return originalSend.call(this, body);
     };
 
     res.on("finish", () => {
-        const duration = Date.now() - start;
-        logger.info(`${req.method} ${req.originalUrl} ${res.statusCode} - ${duration}ms`);
+        const ms = Date.now() - start;
+        const line = `${req.method} ${req.originalUrl} ${res.statusCode} - ${ms}ms`;
+        const meta = { body: redact(req.body), query: req.query, params: req.params };
+        if (res.statusCode >= 400) logger.error(line, meta);
+        else logger.success(line, meta);
     });
 
     next();
 });
 
-// health stays
+// Health check
 app.get("/health", (_req, res) => res.json({ ok: true }));
 
-// new chat route
+// Chat route
 app.use("/chat", require("./routes/chat"));
 
-// static homepage (optional)
+// Static homepage (optional)
 app.use(express.static(path.join(__dirname, "public")));
 
 const PORT = process.env.PORT || 3000;

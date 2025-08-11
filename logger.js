@@ -1,27 +1,34 @@
 // logger.js
-const { createLogger, format, transports } = require("winston");
+const log = require("node-color-log");
 
-const colorizer = format.colorize();
+log.setLevel(process.env.LOG_LEVEL || "debug");
+// log.enableFileAndLine(true); // uncomment if you want file:line in logs
 
-const logger = createLogger({
-    level: process.env.LOG_LEVEL || "debug",
-    format: format.combine(
-        format.errors({ stack: true }),
-        format.timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
-        format.splat(),
-        format.printf(({ timestamp, level, message, stack, ...meta }) => {
-            let metaString = "";
-            try {
-                metaString = Object.keys(meta).length ? ` ${JSON.stringify(meta)}` : "";
-            } catch {
-                metaString = " [meta:unserializable]";
-            }
-            // Apply colors to level for easy spotting
-            return `${timestamp} ${colorizer.colorize(level, `[${level}]`)}: ${stack || message}${metaString}`;
-        })
-    ),
-    transports: [new transports.Console()],
-    exitOnError: false,
-});
+const ts = () => {
+    const d = new Date();
+    const pad = n => String(n).padStart(2, "0");
+    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+};
 
-module.exports = logger;
+const serialize = meta => {
+    if (!meta || typeof meta !== "object" || !Object.keys(meta).length) return "";
+    try {
+        return ` ${JSON.stringify(meta)}`;
+    } catch {
+        return " [meta:unserializable]";
+    }
+};
+
+const emit = (level, message, meta) => {
+    const line = `${ts()} [${level}]: ${message}${serialize(meta)}`;
+    if (typeof log[level] === "function") log[level](line);
+    else log.info(line);
+};
+
+module.exports = {
+    info: (m, meta) => emit("info", m, meta), // blue
+    success: (m, meta) => emit("success", m, meta), // green
+    warn: (m, meta) => emit("warn", m, meta), // yellow
+    error: (m, meta) => emit("error", m, meta), // red
+    debug: (m, meta) => emit("debug", m, meta), // magenta
+};
