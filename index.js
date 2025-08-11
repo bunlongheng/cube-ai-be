@@ -8,7 +8,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Request/Response logging middleware
 app.use((req, res, next) => {
     const start = Date.now();
 
@@ -36,13 +35,10 @@ app.use((req, res, next) => {
     next();
 });
 
-// Health check
 app.get("/health", (_req, res) => res.json({ ok: true }));
 
-// Chat route
 app.use("/chat", require("./routes/chat"));
 
-// Static homepage (optional)
 app.use(express.static(path.join(__dirname, "public")));
 
 const PORT = process.env.PORT || 3000;
