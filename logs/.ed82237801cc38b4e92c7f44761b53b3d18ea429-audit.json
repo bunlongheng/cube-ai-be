@@ -9,6 +9,11 @@
             "date": 1754835727220,
             "name": "/Users/bheng/Sites/cube-ai-be/logs/cube-api-2025-08-10.log",
             "hash": "096aedd5c731a46d3c22d37477407b0271c260e801679fd267b5e0102ec6a611"
+        },
+        {
+            "date": 1754926354114,
+            "name": "/Users/bheng/Sites/cube-ai-be/logs/cube-api-2025-08-11.log",
+            "hash": "e54c0aa96fdd8c0090b54fd2341879c40ba260ed4ff9c4a07604c6c2cee79669"
         }
     ],
     "hashType": "sha256"
