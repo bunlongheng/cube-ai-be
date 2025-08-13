@@ -109,7 +109,7 @@ async function chatOnce(input) {
 }
 
 (async () => {
-    const input = process.argv.slice(2).join(" ") || "Show me appointments by status for next 36 months";
+    const input = process.argv.slice(2).join(" ") || "Show me appointments by status for next 4 weeks";
     const out = await chatOnce(input);
 
     // Pretty print
