@@ -1,0 +1,4102 @@
+[Running] node "/Users/bheng/Sites/cube-ai-be/debug/4-getResponseNoneStream.js"
+[dotenv@17.2.1] injecting env (4) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+sessionBase: https://thryv.cubecloud.dev
+sessionId: d65f139ae06ce5f1a6180a7ff6910b7a
+token: OK
+{
+  status: [33m200[39m,
+  headers: {
+    [32m'access-control-allow-credentials'[39m: [32m'true'[39m,
+    [32m'access-control-expose-headers'[39m: [32m'X-Trace-Id'[39m,
+    [32m'alt-svc'[39m: [32m'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'[39m,
+    [32m'content-encoding'[39m: [32m'gzip'[39m,
+    [32m'content-type'[39m: [32m'application/json'[39m,
+    date: [32m'Wed, 13 Aug 2025 17:04:21 GMT'[39m,
+    [32m'strict-transport-security'[39m: [32m'max-age=31536000; includeSubDomains'[39m,
+    [32m'transfer-encoding'[39m: [32m'chunked'[39m,
+    vary: [32m'Accept-Encoding, Origin'[39m,
+    via: [32m'1.1 google'[39m,
+    [32m'x-powered-by'[39m: [32m'Express'[39m,
+    [32m'x-trace-id'[39m: [32m'1b4d9671-c6c6-4b6d-8f6b-a2ff6e3866cb'[39m
+  },
+  request: {
+    payload: {
+      chatId: [32m'91d3869b-79dd-43e3-b922-bc6d73e4a122'[39m,
+      input: [32m'Show me appointments by status for next 36 months'[39m
+    }
+  },
+  raw: [32m'{"id":"__cutoff__","role":"assistant","state":{"isStreaming":true},"sort":0}\n'[39m +
+    [32m'{"id":"1755104661613-message","role":"user","content":"Show me appointments by status for next 36 months","isDelta":false,"sort":1}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":2}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":3}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"The user is","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":4}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":" asking for appointments by status for the next 36 months. I see that there","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":5}\n'[39m +
+    [32m`{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"'s a memory with this exact objective already (id: 1114ea6c","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":6}\n`[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"-27a1-4386-b8b1-7b9da5bfdf0a)","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":7}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":" that shows:\\n\\n- objective: Show appointments by status for next 36 ","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":8}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"months\\n- Shows the SQL query and result\\n- Context mentions it","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":9}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":" successfully analyzed appointments for next 36 months (Aug 13, 2025","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":10}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":" - Aug 13, 2028)\\n\\nSince I have","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":11}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":" a memory that matches this request exactly, I should use it","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":12}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":" by passing the memoryId to the cubeSqlApi tool.","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":13}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":" The memory shows the SQL query was:\\n\\n```sql\\nSELECT ","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":14}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"\\n    appointments_view.appointment_status as status,\\n    MEASURE(","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":15}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"appointments_view.count) as appointment_count,\\n    MEASURE(","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":16}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"appointments_view.revenue) as total_revenue\\nFROM appointments_view","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":17}\n'[39m +
+    [32m`{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"\\nWHERE appointments_view.date >= '2025-08-13'::","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":18}\n`[39m +
+    [32m`{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"date \\n    AND appointments_view.date < '2028-08","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":19}\n`[39m +
+    [32m`{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"-13'::date\\nGROUP BY 1\\nORDER BY 2","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":20}\n`[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":" DESC\\nLIMIT 5000\\n```\\n\\nSince","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":21}\n'[39m +
+    [32m`{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":" today's date is 2025-08-13, this query shoul","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":22}\n`[39m +
+    [32m`{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"d still be valid. I'll use the memory","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":23}\n`[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":" and execute the same query.","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":24}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":25}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":26}\n'[39m +
+    [32m`{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"I'll analyze appointments by status for the next 36 months. Let me execute","thinking":"","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":27}\n`[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":" this query for you.","thinking":"","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":28}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":29}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":30}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":31}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":32}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":33}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStructuredResponse":false,"isInProcess":true,"isDelta":true,"sort":34}\n'[39m +
+    [32m'{"id":"aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7","role":"assistant","content":"","thinking":"","graphPath":["cube_data_analyst_agent","cube_data_analyst_agent","cube_data_analyst_agent"],"isStru'[39m... 66080 more characters,
+  events: [
+    {
+      id: [32m'__cutoff__'[39m,
+      role: [32m'assistant'[39m,
+      state: { isStreaming: [33mtrue[39m },
+      sort: [33m0[39m
+    },
+    {
+      id: [32m'1755104661613-message'[39m,
+      role: [32m'user'[39m,
+      content: [32m'Show me appointments by status for next 36 months'[39m,
+      isDelta: [33mfalse[39m,
+      sort: [33m1[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m2[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m3[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m'The user is'[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m4[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m' asking for appointments by status for the next 36 months. I see that there'[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m5[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m"'s a memory with this exact objective already (id: 1114ea6c"[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m6[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m'-27a1-4386-b8b1-7b9da5bfdf0a)'[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m7[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m' that shows:\n\n- objective: Show appointments by status for next 36 '[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m8[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m'months\n- Shows the SQL query and result\n- Context mentions it'[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m9[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m' successfully analyzed appointments for next 36 months (Aug 13, 2025'[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m10[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m' - Aug 13, 2028)\n\nSince I have'[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m11[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m' a memory that matches this request exactly, I should use it'[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m12[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m' by passing the memoryId to the cubeSqlApi tool.'[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m13[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m' The memory shows the SQL query was:\n\n```sql\nSELECT '[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m14[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m'\n    appointments_view.appointment_status as status,\n    MEASURE('[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m15[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m'appointments_view.count) as appointment_count,\n    MEASURE('[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m16[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m'appointments_view.revenue) as total_revenue\nFROM appointments_view'[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m17[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m"\nWHERE appointments_view.date >= '2025-08-13'::"[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m18[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m"date \n    AND appointments_view.date < '2028-08"[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m19[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m"-13'::date\nGROUP BY 1\nORDER BY 2"[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m20[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m' DESC\nLIMIT 5000\n```\n\nSince'[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m21[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m" today's date is 2025-08-13, this query shoul"[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m22[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m"d still be valid. I'll use the memory"[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m23[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m' and execute the same query.'[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m24[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m25[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m26[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m"I'll analyze appointments by status for the next 36 months. Let me execute"[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m27[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m' this query for you.'[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m28[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m29[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m30[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m31[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m32[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m33[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m34[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m35[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m36[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m37[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m38[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m39[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m40[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m41[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m42[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m43[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m44[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m45[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m46[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m47[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m48[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m49[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m50[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m51[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m52[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m53[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m54[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m55[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m56[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m57[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m58[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m59[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m60[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m61[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m62[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m63[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m64[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m65[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m66[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m67[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m68[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m69[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m70[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m71[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m72[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m73[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m74[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m75[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m76[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m77[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m78[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m79[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m80[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m81[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m82[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m83[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m84[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m85[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m86[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m87[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m88[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m89[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m90[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m91[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m92[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m93[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m94[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m95[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m96[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m97[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m98[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m99[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m100[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m101[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m102[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m103[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m104[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m105[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m106[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m107[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m108[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m109[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m110[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m111[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m112[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m113[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m114[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m115[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m116[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m117[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m118[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m119[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m120[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m121[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m122[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m123[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m124[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m125[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m126[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m127[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m128[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m129[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m130[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m131[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m132[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m133[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m134[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m135[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m136[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m137[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m138[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m139[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m140[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m141[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m142[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m143[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m144[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m145[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m146[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m147[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m148[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m149[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m150[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m151[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m152[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m153[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m154[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m155[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m156[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m157[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m158[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m159[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m160[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m161[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m162[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m163[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m164[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m165[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m166[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m167[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m168[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m169[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m170[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m171[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m172[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m173[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m174[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m175[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m176[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m177[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m178[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m179[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m180[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m181[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m182[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m183[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m184[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m185[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m186[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m187[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m188[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m189[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m190[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m191[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m192[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m193[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m194[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m195[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m196[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m197[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m198[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m199[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m200[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m201[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m202[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m203[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m204[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m205[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m206[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m207[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m208[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m209[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m210[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m211[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m212[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m213[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m214[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m215[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m216[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m217[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m218[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m219[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m220[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m221[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m222[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m223[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m224[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m225[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m226[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m227[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m228[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m229[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m230[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m231[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m232[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m233[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m234[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m235[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m236[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m237[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m238[39m
+    },
+    {
+      id: [32m'aacc2eaf-7f46-430c-8e4b-5889d4d5b5c7'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m"I'll analyze appointments by status for the next 36 months. Let me execute this query for you."[39m,
+      thinking: [32m"The user is asking for appointments by status for the next 36 months. I see that there's a memory with this exact objective already (id: 1114ea6c-27a1-4386-b8b1-7b9da5bfdf0a) that shows:\n"[39m +
+        [32m'\n'[39m +
+        [32m'- objective: Show appointments by status for next 36 months\n'[39m +
+        [32m'- Shows the SQL query and result\n'[39m +
+        [32m'- Context mentions it successfully analyzed appointments for next 36 months (Aug 13, 2025 - Aug 13, 2028)\n'[39m +
+        [32m'\n'[39m +
+        [32m'Since I have a memory that matches this request exactly, I should use it by passing the memoryId to the cubeSqlApi tool. The memory shows the SQL query was:\n'[39m +
+        [32m'\n'[39m +
+        [32m'```sql\n'[39m +
+        [32m'SELECT \n'[39m +
+        [32m'    appointments_view.appointment_status as status,\n'[39m +
+        [32m'    MEASURE(appointments_view.count) as appointment_count,\n'[39m +
+        [32m'    MEASURE(appointments_view.revenue) as total_revenue\n'[39m +
+        [32m'FROM appointments_view\n'[39m +
+        [32m"WHERE appointments_view.date >= '2025-08-13'::date \n"[39m +
+        [32m"    AND appointments_view.date < '2028-08-13'::date\n"[39m +
+        [32m'GROUP BY 1\n'[39m +
+        [32m'ORDER BY 2 DESC\n'[39m +
+        [32m'LIMIT 5000\n'[39m +
+        [32m'```\n'[39m +
+        [32m'\n'[39m +
+        [32m"Since today's date is 2025-08-13, this query should still be valid. I'll use the memory and execute the same query."[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mfalse[39m,
+      isDelta: [33mfalse[39m,
+      sort: [33m239[39m
+    },
+    {
+      id: [32m'__state__'[39m,
+      role: [32m'assistant'[39m,
+      state: {},
+      isDelta: [33mfalse[39m,
+      sort: [33m240[39m
+    },
+    {
+      id: [32m'aa46b9e8-5436-427e-bc1b-26f50af7b1ff'[39m,
+      role: [32m'assistant'[39m,
+      toolCall: {
+        name: [32m'cubeSqlApi'[39m,
+        input: [32m`{"sqlQuery":"SELECT \\n    appointments_view.appointment_status as status,\\n    MEASURE(appointments_view.count) as appointment_count,\\n    MEASURE(appointments_view.revenue) as total_revenue\\nFROM appointments_view\\nWHERE appointments_view.date >= '2025-08-13'::date \\n    AND appointments_view.date < '2028-08-13'::date\\nGROUP BY 1\\nORDER BY 2 DESC\\nLIMIT 5000","queryTitle":"Appointments by Status - Next 36 Months","description":"Shows appointment counts and revenue by status for the next 36 months (Aug 13, 2025 - Aug 13, 2028), ordered by appointment count descending","userRequest":"Show appointments by status for next 36 months","memoryId":"1114ea6c-27a1-4386-b8b1-7b9da5bfdf0a","vegaSpec":{"$schema":"https://vega.github.io/schema/vega-lite/v5.json","data":{"name":"table"},"mark":{"type":"bar","tooltip":true},"encoding":{"x":{"field":"status","type":"ordinal","title":"Appointment Status"},"y":{"field":"appointment_count","type":"quantitative","title":"Number of Appointments"},"color":{"field":"status","type":"nominal","scale":{"range":["#7A77FF","#FF6492","#4DD5FF","#B07CFF","#FFBB67"]},"legend":{"title":"Status"}},"tooltip":[{"field":"status","type":"ordinal","title":"Status"},{"field":"appointment_count","type":"quantitative","title":"Appointments"},{"field":"total_revenue","type":"quantitative","title":"Revenue","format":"$,.0f"}]},"title":"Appointments by Status - Next 36 Months"}}`[39m
+      },
+      isInProcess: [33mtrue[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'tools'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isDelta: [33mfalse[39m,
+      sort: [33m241[39m
+    },
+    {
+      id: [32m'__state__'[39m,
+      role: [32m'assistant'[39m,
+      state: {},
+      isDelta: [33mfalse[39m,
+      sort: [33m242[39m
+    },
+    {
+      id: [32m'aa46b9e8-5436-427e-bc1b-26f50af7b1ff'[39m,
+      role: [32m'assistant'[39m,
+      toolCall: {
+        name: [32m'cubeSqlApi'[39m,
+        input: [32m`{"sqlQuery":"SELECT \\n    appointments_view.appointment_status as status,\\n    MEASURE(appointments_view.count) as appointment_count,\\n    MEASURE(appointments_view.revenue) as total_revenue\\nFROM appointments_view\\nWHERE appointments_view.date >= '2025-08-13'::date \\n    AND appointments_view.date < '2028-08-13'::date\\nGROUP BY 1\\nORDER BY 2 DESC\\nLIMIT 5000","queryTitle":"Appointments by Status - Next 36 Months","description":"Shows appointment counts and revenue by status for the next 36 months (Aug 13, 2025 - Aug 13, 2028), ordered by appointment count descending","userRequest":"Show appointments by status for next 36 months","memoryId":"1114ea6c-27a1-4386-b8b1-7b9da5bfdf0a","vegaSpec":{"$schema":"https://vega.github.io/schema/vega-lite/v5.json","data":{"name":"table"},"mark":{"type":"bar","tooltip":true},"encoding":{"x":{"field":"status","type":"ordinal","title":"Appointment Status"},"y":{"field":"appointment_count","type":"quantitative","title":"Number of Appointments"},"color":{"field":"status","type":"nominal","scale":{"range":["#7A77FF","#FF6492","#4DD5FF","#B07CFF","#FFBB67"]},"legend":{"title":"Status"}},"tooltip":[{"field":"status","type":"ordinal","title":"Status"},{"field":"appointment_count","type":"quantitative","title":"Appointments"},{"field":"total_revenue","type":"quantitative","title":"Revenue","format":"$,.0f"}]},"title":"Appointments by Status - Next 36 Months"}}`[39m,
+        result: [32m'{\n'[39m +
+          [32m'  "vegaSpec": {\n'[39m +
+          [32m'    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",\n'[39m +
+          [32m'    "data": {\n'[39m +
+          [32m'      "name": "table"\n'[39m +
+          [32m'    },\n'[39m +
+          [32m'    "mark": {\n'[39m +
+          [32m'      "type": "bar",\n'[39m +
+          [32m'      "tooltip": true\n'[39m +
+          [32m'    },\n'[39m +
+          [32m'    "encoding": {\n'[39m +
+          [32m'      "x": {\n'[39m +
+          [32m'        "field": "status",\n'[39m +
+          [32m'        "type": "ordinal",\n'[39m +
+          [32m'        "title": "Appointment Status"\n'[39m +
+          [32m'      },\n'[39m +
+          [32m'      "y": {\n'[39m +
+          [32m'        "field": "appointment_count",\n'[39m +
+          [32m'        "type": "quantitative",\n'[39m +
+          [32m'        "title": "Number of Appointments"\n'[39m +
+          [32m'      },\n'[39m +
+          [32m'      "color": {\n'[39m +
+          [32m'        "field": "status",\n'[39m +
+          [32m'        "type": "nominal",\n'[39m +
+          [32m'        "scale": {\n'[39m +
+          [32m'          "range": [\n'[39m +
+          [32m'            "#7A77FF",\n'[39m +
+          [32m'            "#FF6492",\n'[39m +
+          [32m'            "#4DD5FF",\n'[39m +
+          [32m'            "#B07CFF",\n'[39m +
+          [32m'            "#FFBB67"\n'[39m +
+          [32m'          ]\n'[39m +
+          [32m'        },\n'[39m +
+          [32m'        "legend": {\n'[39m +
+          [32m'          "title": "Status"\n'[39m +
+          [32m'        }\n'[39m +
+          [32m'      },\n'[39m +
+          [32m'      "tooltip": [\n'[39m +
+          [32m'        {\n'[39m +
+          [32m'          "field": "status",\n'[39m +
+          [32m'          "type": "ordinal",\n'[39m +
+          [32m'          "title": "Status"\n'[39m +
+          [32m'        },\n'[39m +
+          [32m'        {\n'[39m +
+          [32m'          "field": "appointment_count",\n'[39m +
+          [32m'          "type": "quantitative",\n'[39m +
+          [32m'          "title": "Appointments"\n'[39m +
+          [32m'        },\n'[39m +
+          [32m'        {\n'[39m +
+          [32m'          "field": "total_revenue",\n'[39m +
+          [32m'          "type": "quantitative",\n'[39m +
+          [32m'          "title": "Revenue",\n'[39m +
+          [32m'          "format": "$,.0f"\n'[39m +
+          [32m'        }\n'[39m +
+          [32m'      ]\n'[39m +
+          [32m'    },\n'[39m +
+          [32m'    "title": "Appointments by Status - Next 36 Months"\n'[39m +
+          [32m'  },\n'[39m +
+          [32m`  "sqlQuery": "SELECT \\n    appointments_view.appointment_status as status,\\n    MEASURE(appointments_view.count) as appointment_count,\\n    MEASURE(appointments_view.revenue) as total_revenue\\nFROM appointments_view\\nWHERE appointments_view.date >= '2025-08-13'::date \\n    AND appointments_view.date < '2028-08-13'::date\\nGROUP BY 1\\nORDER BY 2 DESC\\nLIMIT 5000",\n`[39m +
+          [32m'  "queryTitle": "Appointments by Status - Next 36 Months",\n'[39m +
+          [32m'  "description": "Shows appointment counts and revenue by status for the next 36 months (Aug 13, 2025 - Aug 13, 2028), ordered by appointment count descending",\n'[39m +
+          [32m'  "userRequest": "Show appointments by status for next 36 months",\n'[39m +
+          [32m'  "schema": [\n'[39m +
+          [32m'    {\n'[39m +
+          [32m'      "name": "status",\n'[39m +
+          [32m'      "column_type": "String"\n'[39m +
+          [32m'    },\n'[39m +
+          [32m'    {\n'[39m +
+          [32m'      "name": "appointment_count",\n'[39m +
+          [32m'      "column_type": "Int64"\n'[39m +
+          [32m'    },\n'[39m +
+          [32m'    {\n'[39m +
+          [32m'      "name": "total_revenue",\n'[39m +
+          [32m'      "column_type": "Double"\n'[39m +
+          [32m'    }\n'[39m +
+          [32m'  ],\n'[39m +
+          [32m'  "data": [\n'[39m +
+          [32m'    [\n'[39m +
+          [32m'      "Scheduled",\n'[39m +
+          [32m'      "7",\n'[39m +
+          [32m'      "0"\n'[39m +
+          [32m'    ]\n'[39m +
+          [32m'  ],\n'[39m +
+          [32m'  "totalRows": 1,\n'[39m +
+          [32m'  "uuid": "6f5d07f7-4e2e-42b1-9e0c-d5525317ab57"\n'[39m +
+          [32m'}'[39m
+      },
+      isInProcess: [33mfalse[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'tools'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isDelta: [33mfalse[39m,
+      sort: [33m243[39m
+    },
+    {
+      id: [32m'__state__'[39m,
+      role: [32m'assistant'[39m,
+      state: {},
+      isDelta: [33mfalse[39m,
+      sort: [33m244[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m245[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m246[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m'I'[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m247[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m"'ve analyzed the appointments by status for the next 36 months (from"[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m248[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m" today through August 13, 2028). Here's what I found:\n\n**"[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m249[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m'Key Insights:**\n- There are only **7 scheduled appointments** over'[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m250[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m' the next 3 years\n'[39m +
+        [32m'- All future appointments currently have a "Scheduled" status\n'[39m +
+        [32m'- No'[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m251[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m' revenue has been generated yet (as expected for future appointments)\n'[39m +
+        [32m'- This represents extremely'[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m252[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m' limited advance booking, suggesting significant opportunity for growth\n'[39m +
+        [32m'\n'[39m +
+        [32m'**Recommendations:**\n'[39m +
+        [32m'-'[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m253[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m' Consider implementing strategies to encourage advance bookings\n'[39m +
+        [32m'- Review scheduling processes'[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m254[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m' to capture more future appointments\n'[39m +
+        [32m'- Explore marketing campaigns to fill'[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m255[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m' the calendar further out\n'[39m +
+        [32m'\n'[39m +
+        [32m'The chart shows the appointment distribution'[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m256[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m' by status, highlighting the very small number of future book'[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m257[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m'ings currently in the system.'[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m258[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m''[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mtrue[39m,
+      isDelta: [33mtrue[39m,
+      sort: [33m259[39m
+    },
+    {
+      id: [32m'c05fff14-bba8-448b-88fa-2941e11dfc5f'[39m,
+      role: [32m'assistant'[39m,
+      content: [32m"I've analyzed the appointments by status for the next 36 months (from today through August 13, 2028). Here's what I found:\n"[39m +
+        [32m'\n'[39m +
+        [32m'**Key Insights:**\n'[39m +
+        [32m'- There are only **7 scheduled appointments** over the next 3 years\n'[39m +
+        [32m'- All future appointments currently have a "Scheduled" status\n'[39m +
+        [32m'- No revenue has been generated yet (as expected for future appointments)\n'[39m +
+        [32m'- This represents extremely limited advance booking, suggesting significant opportunity for growth\n'[39m +
+        [32m'\n'[39m +
+        [32m'**Recommendations:**\n'[39m +
+        [32m'- Consider implementing strategies to encourage advance bookings\n'[39m +
+        [32m'- Review scheduling processes to capture more future appointments\n'[39m +
+        [32m'- Explore marketing campaigns to fill the calendar further out\n'[39m +
+        [32m'\n'[39m +
+        [32m'The chart shows the appointment distribution by status, highlighting the very small number of future bookings currently in the system.'[39m,
+      thinking: [32m''[39m,
+      graphPath: [
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m,
+        [32m'cube_data_analyst_agent'[39m
+      ],
+      isStructuredResponse: [33mfalse[39m,
+      isInProcess: [33mfalse[39m,
+      isDelta: [33mfalse[39m,
+      sort: [33m260[39m
+    },
+    {
+      id: [32m'__state__'[39m,
+      role: [32m'assistant'[39m,
+      state: {},
+      isDelta: [33mfalse[39m,
+      sort: [33m261[39m
+    }
+  ],
+  assistant: [32m"I've analyzed the appointments by status for the next 36 months (from today through August 13, 2028). Here's what I found:\n"[39m +
+    [32m'\n'[39m +
+    [32m'**Key Insights:**\n'[39m +
+    [32m'- There are only **7 scheduled appointments** over the next 3 years\n'[39m +
+    [32m'- All future appointments currently have a "Scheduled" status\n'[39m +
+    [32m'- No revenue has been generated yet (as expected for future appointments)\n'[39m +
+    [32m'- This represents extremely limited advance booking, suggesting significant opportunity for growth\n'[39m +
+    [32m'\n'[39m +
+    [32m'**Recommendations:**\n'[39m +
+    [32m'- Consider implementing strategies to encourage advance bookings\n'[39m +
+    [32m'- Review scheduling processes to capture more future appointments\n'[39m +
+    [32m'- Explore marketing campaigns to fill the calendar further out\n'[39m +
+    [32m'\n'[39m +
+    [32m'The chart shows the appointment distribution by status, highlighting the very small number of future bookings currently in the system.'[39m,
+  rows: [1mnull[22m,
+  chartSpec: [1mnull[22m
+}
+
+[Done] exited with code=0 in 19.816 seconds
+

@@ -1,0 +1,172 @@
+{
+    "data": [
+        {
+            "appointments.appointment_status": "Completed",
+            "appointments.count": "9",
+            "appointments.date.month": "2024-03-01T00:00:00.000",
+            "appointments.date": "2024-03-01T00:00:00.000"
+        },
+        {
+            "appointments.date.month": "2024-03-01T00:00:00.000",
+            "appointments.date": "2024-03-01T00:00:00.000",
+            "appointments.appointment_status": "Request Expired",
+            "appointments.count": "5"
+        },
+        {
+            "appointments.date.month": "2024-04-01T00:00:00.000",
+            "appointments.count": "44",
+            "appointments.appointment_status": "Completed",
+            "appointments.date": "2024-04-01T00:00:00.000"
+        },
+        {
+            "appointments.count": "13",
+            "appointments.date.month": "2024-04-01T00:00:00.000",
+            "appointments.date": "2024-04-01T00:00:00.000",
+            "appointments.appointment_status": "Request Expired"
+        },
+        {
+            "appointments.count": "173",
+            "appointments.appointment_status": "Completed",
+            "appointments.date": "2024-05-01T00:00:00.000",
+            "appointments.date.month": "2024-05-01T00:00:00.000"
+        },
+        {
+            "appointments.count": "4",
+            "appointments.appointment_status": "Request Expired",
+            "appointments.date": "2024-05-01T00:00:00.000",
+            "appointments.date.month": "2024-05-01T00:00:00.000"
+        },
+        {
+            "appointments.date": "2024-05-01T00:00:00.000",
+            "appointments.appointment_status": "Scheduled",
+            "appointments.count": "3",
+            "appointments.date.month": "2024-05-01T00:00:00.000"
+        },
+        {
+            "appointments.count": "171",
+            "appointments.appointment_status": "Completed",
+            "appointments.date.month": "2024-06-01T00:00:00.000",
+            "appointments.date": "2024-06-01T00:00:00.000"
+        },
+        {
+            "appointments.date.month": "2024-06-01T00:00:00.000",
+            "appointments.appointment_status": "Request Expired",
+            "appointments.count": "6",
+            "appointments.date": "2024-06-01T00:00:00.000"
+        },
+        {
+            "appointments.date": "2024-06-01T00:00:00.000",
+            "appointments.date.month": "2024-06-01T00:00:00.000",
+            "appointments.appointment_status": "Scheduled",
+            "appointments.count": "1"
+        },
+        {
+            "appointments.count": "168",
+            "appointments.date.month": "2024-07-01T00:00:00.000",
+            "appointments.appointment_status": "Completed",
+            "appointments.date": "2024-07-01T00:00:00.000"
+        },
+        {
+            "appointments.date": "2024-07-01T00:00:00.000",
+            "appointments.appointment_status": "Request Expired",
+            "appointments.count": "2",
+            "appointments.date.month": "2024-07-01T00:00:00.000"
+        },
+        {
+            "appointments.appointment_status": "Scheduled",
+            "appointments.date.month": "2024-07-01T00:00:00.000",
+            "appointments.date": "2024-07-01T00:00:00.000",
+            "appointments.count": "2"
+        },
+        {
+            "appointments.date.month": "2024-08-01T00:00:00.000",
+            "appointments.date": "2024-08-01T00:00:00.000",
+            "appointments.count": "116",
+            "appointments.appointment_status": "Completed"
+        },
+        {
+            "appointments.count": "1",
+            "appointments.appointment_status": "Scheduled",
+            "appointments.date.month": "2024-08-01T00:00:00.000",
+            "appointments.date": "2024-08-01T00:00:00.000"
+        },
+        {
+            "appointments.date": "2024-09-01T00:00:00.000",
+            "appointments.count": "70",
+            "appointments.date.month": "2024-09-01T00:00:00.000",
+            "appointments.appointment_status": "Completed"
+        },
+        {
+            "appointments.count": "1",
+            "appointments.date": "2024-09-01T00:00:00.000",
+            "appointments.date.month": "2024-09-01T00:00:00.000",
+            "appointments.appointment_status": "Request Expired"
+        },
+        {
+            "appointments.count": "78",
+            "appointments.appointment_status": "Completed",
+            "appointments.date.month": "2024-10-01T00:00:00.000",
+            "appointments.date": "2024-10-01T00:00:00.000"
+        },
+        {
+            "appointments.date": "2024-10-01T00:00:00.000",
+            "appointments.appointment_status": "Request Expired",
+            "appointments.count": "4",
+            "appointments.date.month": "2024-10-01T00:00:00.000"
+        },
+        {
+            "appointments.appointment_status": "Completed",
+            "appointments.date.month": "2024-11-01T00:00:00.000",
+            "appointments.count": "55",
+            "appointments.date": "2024-11-01T00:00:00.000"
+        },
+        {
+            "appointments.appointment_status": "Request Expired",
+            "appointments.date": "2024-11-01T00:00:00.000",
+            "appointments.count": "3",
+            "appointments.date.month": "2024-11-01T00:00:00.000"
+        },
+        {
+            "appointments.count": "27",
+            "appointments.date": "2024-12-01T00:00:00.000",
+            "appointments.appointment_status": "Completed",
+            "appointments.date.month": "2024-12-01T00:00:00.000"
+        },
+        {
+            "appointments.appointment_status": "Request Expired",
+            "appointments.date.month": "2024-12-01T00:00:00.000",
+            "appointments.date": "2024-12-01T00:00:00.000",
+            "appointments.count": "5"
+        },
+        {
+            "appointments.date": "2025-01-01T00:00:00.000",
+            "appointments.appointment_status": "Completed",
+            "appointments.count": "16",
+            "appointments.date.month": "2025-01-01T00:00:00.000"
+        },
+        {
+            "appointments.count": "3",
+            "appointments.date.month": "2025-01-01T00:00:00.000",
+            "appointments.appointment_status": "Request Expired",
+            "appointments.date": "2025-01-01T00:00:00.000"
+        },
+        {
+            "appointments.count": "14",
+            "appointments.appointment_status": "Completed",
+            "appointments.date.month": "2025-02-01T00:00:00.000",
+            "appointments.date": "2025-02-01T00:00:00.000"
+        },
+        {
+            "appointments.appointment_status": "Request Expired",
+            "appointments.count": "3",
+            "appointments.date": "2025-02-01T00:00:00.000",
+            "appointments.date.month": "2025-02-01T00:00:00.000"
+        },
+        {
+            "appointments.count": "7",
+            "appointments.appointment_status": "Completed",
+            "appointments.date": "2025-03-01T00:00:00.000",
+            "appointments.date.month": "2025-03-01T00:00:00.000"
+        }
+    ]
+}

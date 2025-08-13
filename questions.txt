@@ -1,0 +1,10 @@
+- 📅 How many appointments were completed last week?
+- 🕒 What’s the average time to book an appointment?
+- 🧲 How many new leads came in this month?
+- 🔁 Which leads haven’t been followed up in 7 days?
+- ✉️ How many emails were sent vs opened last week?
+- 🧑‍💼 Which staff member booked the most appointments?
+- 💬 What’s the lead-to-appointment conversion rate?
+- 🚫 Which appointments were cancelled and why?
+- 🔍 Show all leads from Facebook that converted to bookings
+- 📨 What time of day gets the best email open rates?

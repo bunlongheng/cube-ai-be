@@ -1,0 +1,19 @@
+{
+  "measures": ["appointments.count"],
+  "dimensions": ["appointments.appointment_status"],
+  "filters": [
+    {
+      "member": "appointments.business_uid",
+      "operator": "equals",
+      "values": ["11zf55br5p8vdnrt"]
+    }
+  ],
+  "timeDimensions": [
+    {
+      "dimension": "appointments.date",
+      "granularity": "month",
+      "dateRange": "last 24 months"
+    }
+  ],
+  "segments": ["appointments.one_one_appointment"]
+}
