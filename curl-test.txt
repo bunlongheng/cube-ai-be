@@ -1,0 +1,7 @@
+export CUBE_API_KEY='sk-***'
+
+curl -i -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Api-Key $CUBE_API_KEY" \
+  -d '{"externalId":"user@example.com","userAttributes":[]}' \
+  https://thryv.cubecloud.dev/api/v1/embed/generate-session

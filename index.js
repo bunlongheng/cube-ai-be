@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const logger = require("./logger");
+if (typeof fetch === "undefined") global.fetch = (...a) => import("node-fetch").then(m => m.default(...a)); // safe polyfill
 
 const app = express();
 app.use(cors());
@@ -10,20 +11,17 @@ app.use(express.json());
 
 app.use((req, res, next) => {
     const start = Date.now();
-
     const redact = o => {
         if (!o || typeof o !== "object") return o;
         const c = { ...o };
         for (const k of Object.keys(c)) if (/(password|token|secret|apikey)/i.test(k)) c[k] = "[REDACTED]";
         return c;
     };
-
     const originalSend = res.send;
     res.send = function (body) {
         logger.debug(`Response for ${req.method} ${req.originalUrl}`, { statusCode: res.statusCode, body });
         return originalSend.call(this, body);
     };
-
     res.on("finish", () => {
         const ms = Date.now() - start;
         const line = `${req.method} ${req.originalUrl} ${res.statusCode} - ${ms}ms`;
@@ -31,13 +29,14 @@ app.use((req, res, next) => {
         if (res.statusCode >= 400) logger.error(line, meta);
         else logger.success(line, meta);
     });
-
     next();
 });
 
 app.get("/health", (_req, res) => res.json({ ok: true }));
 
+// mount routes
 app.use("/chat", require("./routes/chat"));
+app.use("/", require("./routes/session")); // <-- add this
 
 app.use(express.static(path.join(__dirname, "public")));
 
