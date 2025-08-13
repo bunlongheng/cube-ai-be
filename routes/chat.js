@@ -3,26 +3,42 @@ const express = require("express");
 const crypto = require("crypto");
 const router = express.Router();
 
-async function getChatToken({ apiKey, chatUrl, externalId = "user@example.com", userAttributes = [] }) {
-    const origin = new URL(chatUrl).origin;
+// Choose the correct base for embed endpoints (NOT the agent URL)
+function getSessionBase() {
+    // Prefer explicit override, else fall back to REST origin, else your known base
+    const override = process.env.CUBE_SESSION_BASE; // e.g. https://thryv.cubecloud.dev
+    if (override) return override.replace(/\/+$/, "");
+    if (process.env.CUBE_REST_URL) return new URL(process.env.CUBE_REST_URL).origin;
+    // last resort - hardcode your tenant base
+    return "https://thryv.cubecloud.dev";
+}
 
-    // 1) generate session
-    const s = await fetch(`${origin}/api/v1/embed/generate-session`, {
+async function getChatToken({ apiKey, chatUrl, externalId = "user@example.com", userAttributes = [] }) {
+    const sessionBase = getSessionBase();
+
+    // 1) generate session (Api-Key)
+    const s = await fetch(`${sessionBase}/api/v1/embed/generate-session`, {
         method: "POST",
         headers: { "Content-Type": "application/json", Authorization: `Api-Key ${apiKey}` },
         body: JSON.stringify({ externalId, userAttributes }),
     });
-    if (!s.ok) throw new Error(`generate-session ${s.status}: ${await s.text()}`);
+    if (!s.ok) {
+        const body = await s.text();
+        throw new Error(`generate-session ${s.status}: ${body}`);
+    }
     const { sessionId } = await s.json();
     if (!sessionId) throw new Error("Missing sessionId");
 
-    // 2) exchange for token
-    const t = await fetch(`${origin}/api/v1/embed/session/token`, {
+    // 2) exchange for token (Api-Key)
+    const t = await fetch(`${sessionBase}/api/v1/embed/session/token`, {
         method: "POST",
         headers: { "Content-Type": "application/json", Authorization: `Api-Key ${apiKey}` },
         body: JSON.stringify({ sessionId }),
     });
-    if (!t.ok) throw new Error(`session/token ${t.status}: ${await t.text()}`);
+    if (!t.ok) {
+        const body = await t.text();
+        throw new Error(`session/token ${t.status}: ${body}`);
+    }
     const { token } = await t.json();
     if (!token) throw new Error("Missing token");
     return token;
@@ -43,8 +59,8 @@ router.post("/", async (req, res) => {
         const token = await getChatToken({
             apiKey: CUBE_API_KEY,
             chatUrl: CUBE_API_URL,
-            externalId,
-            userAttributes,
+            externalId: externalId || req.headers["x-user-email"] || "user@example.com",
+            userAttributes: Array.isArray(userAttributes) ? userAttributes : [],
         });
 
         const payload = { chatId: chatId || crypto.randomUUID(), input: message };
@@ -57,7 +73,10 @@ router.post("/", async (req, res) => {
                 headers: { ...headers, Accept: "text/event-stream" },
                 body: JSON.stringify(payload),
             });
-            if (!upstream.ok || !upstream.body) return res.status(upstream.status).send(await upstream.text());
+            if (!upstream.ok || !upstream.body) {
+                const txt = await upstream.text();
+                return res.status(upstream.status).json({ error: txt || "Chat upstream error" });
+            }
 
             res.status(200);
             res.setHeader("Content-Type", upstream.headers.get("content-type") || "text/event-stream");
@@ -74,12 +93,11 @@ router.post("/", async (req, res) => {
         }
 
         // non-stream: collect NDJSON and return last assistant chunk
-        const chatRes = await fetch(CUBE_API_URL, {
-            method: "POST",
-            headers,
-            body: JSON.stringify(payload),
-        });
-        if (!chatRes.ok || !chatRes.body) return res.status(chatRes.status).send(await chatRes.text());
+        const chatRes = await fetch(CUBE_API_URL, { method: "POST", headers, body: JSON.stringify(payload) });
+        if (!chatRes.ok || !chatRes.body) {
+            const txt = await chatRes.text();
+            return res.status(chatRes.status).json({ error: txt || "Chat upstream error" });
+        }
 
         const reader = chatRes.body.getReader();
         const chunks = [];
