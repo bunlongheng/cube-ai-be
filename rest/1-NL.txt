@@ -1,0 +1,1 @@
+Show the monthly appointment counts for the last 24 months for business ID 11zf55br5p8vdnrt, grouped by appointment status, including only one-on-one appointments.

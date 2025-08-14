@@ -1,19 +1,45 @@
-{
-  "measures": ["appointments.count"],
-  "dimensions": ["appointments.appointment_status"],
-  "filters": [
-    {
-      "member": "appointments.business_uid",
-      "operator": "equals",
-      "values": ["11zf55br5p8vdnrt"]
-    }
-  ],
-  "timeDimensions": [
-    {
-      "dimension": "appointments.date",
-      "granularity": "month",
-      "dateRange": "last 24 months"
-    }
-  ],
-  "segments": ["appointments.one_one_appointment"]
+// test-rest-load.js
+require("dotenv").config();
+if (typeof fetch === "undefined") global.fetch = (...a) => import("node-fetch").then(m => m.default(...a));
+
+const { CUBE_REST_URL, CUBE_REST_TOKEN } = process.env;
+if (!CUBE_REST_URL || !CUBE_REST_TOKEN) {
+  console.error("Missing CUBE_REST_URL or CUBE_REST_TOKEN in .env");
+  process.exit(1);
 }
+
+const query = {
+  measures: ["appointments.count"],
+  dimensions: ["appointments.appointment_status"],
+  filters: [
+    {
+      member: "appointments.business_uid",
+      operator: "equals",
+      values: ["11zf55br5p8vdnrt"],
+    },
+  ],
+  timeDimensions: [
+    {
+      dimension: "appointments.date",
+      granularity: "month",
+      dateRange: "last 24 months",
+    },
+  ],
+  segments: ["appointments.one_one_appointment"],
+};
+
+(async () => {
+  const url = `${CUBE_REST_URL}/load?` + new URLSearchParams({ query: JSON.stringify(query) });
+  const r = await fetch(url, { headers: { Authorization: CUBE_REST_TOKEN } });
+
+  const text = await r.text();
+  const ct = r.headers.get("content-type") || "";
+  const body = ct.includes("application/json") ? JSON.parse(text) : text;
+
+  console.log("Status:", r.status);
+  console.log("URL:", url);
+  console.log("Response:");
+  console.dir(body, { depth: null, maxArrayLength: null });
+
+  if (!r.ok) process.exit(2);
+})();
